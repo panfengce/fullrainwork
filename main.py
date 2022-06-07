@@ -1,3 +1,14 @@
+#!/usr/bin/env python
+# -*- encoding: utf-8 -*-
+'''
+@File    :   main.py
+@Time    :   2022/06/07 15:46:13
+@Author  :   pan 
+@Email   :   pfclr1218@hotmail.com
+@Version :   1.0
+@Desc    :   None
+'''
+
 
 from views import PathHundle, PayRoll
 
@@ -38,6 +49,9 @@ Finance_Dict = {
 def main():
     PH = PathHundle()
     PH.dir_mk_by_cus(r'/Users/pan/Documents/02-work/03-客户')
+    
+    PY = PayRoll('202205')
+    paydata = PY.run_func()
 
 
 if __name__ == '__main__':
